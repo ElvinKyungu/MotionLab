@@ -21,12 +21,12 @@ const setFeatureRef = (el: Element | ComponentPublicInstance | null, index: numb
 }
 
 const featureData = [
-  { icon: '⚡', title: 'Performance Optimale', desc: 'Des animations fluides à 60fps pour une expérience utilisateur parfaite' },
-  { icon: '🎨', title: 'Design Moderne', desc: 'Interface élégante avec des effets visuels captivants' },
-  { icon: '🚀', title: 'Rapide & Léger', desc: 'Optimisé pour la vitesse sans compromis sur les fonctionnalités' },
-  { icon: '🔧', title: 'Personnalisable', desc: 'Adaptez chaque détail à vos besoins spécifiques' },
-  { icon: '📱', title: 'Responsive', desc: 'Parfait sur tous les appareils, du mobile au desktop' },
-  { icon: '💎', title: 'Qualité Premium', desc: 'Code propre et maintenable pour vos projets' }
+  { icon: '⚡', title: 'Composable First', desc: 'Build animations with reusable composables. No GSAP boilerplate in your components.' },
+  { icon: '🎨', title: 'Type Safe', desc: 'Full TypeScript support with autocomplete for all animation properties.' },
+  { icon: '🚀', title: 'Auto Cleanup', desc: 'Automatic context cleanup on unmount. No memory leaks, no manual kill().' },
+  { icon: '🔧', title: 'Scroll Triggers', desc: 'ScrollTrigger integration out of the box with sensible defaults.' },
+  { icon: '📱', title: 'Production Ready', desc: 'Tree-shakeable, SSR compatible, works with Nuxt 3 and Vue 3.' },
+  { icon: '💎', title: 'GSAP Powered', desc: 'Built on GSAP 3.12+ with full access to timelines and plugins.' }
 ]
 // Hero entrance animation
 useHeroAnimation({
@@ -67,10 +67,10 @@ onMounted(() => {
         </div>
         <div class="hidden md:flex items-center gap-8">
           <a href="#features" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">Features</a>
-          <a href="#about" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">About</a>
-          <a href="#contact" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">Contact</a>
+          <a href="/lab" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">Components</a>
+          <a href="https://github.com/ElvinKyungu/MotionLab" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">GitHub</a>
           <button class="px-6 py-2 rounded-lg bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-medium shadow-lg shadow-sky-500/20">
-            Get Started
+            Browse Lab
           </button>
         </div>
       </div>
@@ -85,11 +85,11 @@ onMounted(() => {
             class="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
           >
             <span class="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
-              Create Amazing
+              GSAP Animations
             </span>
             <br>
             <span class="bg-gradient-to-r from-sky-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Experiences
+              Made Simple
             </span>
           </h1>
 
@@ -97,21 +97,21 @@ onMounted(() => {
             ref="heroSubtitle"
             class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl font-light leading-relaxed"
           >
-            Plongez dans un univers d'innovation où le design rencontre la performance.
-            Créez, animez et impressionnez avec des interfaces modernes.
+            Build production-ready animations with composable patterns.
+            No boilerplate, just clean code and smooth 60fps motion.
           </p>
 
           <div ref="heroButton" class="flex flex-wrap gap-4">
             <button class="group px-8 py-4 rounded-lg bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-medium shadow-xl shadow-sky-500/30 hover:shadow-sky-500/50 hover:scale-105">
               <span class="flex items-center gap-2">
-                Commencer
+                Browse Components
                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                 </svg>
               </span>
             </button>
             <button class="px-8 py-4 rounded-lg border border-gray-700 hover:border-sky-500 hover:bg-sky-500/10 transition-all duration-300 font-medium backdrop-blur-sm">
-              En savoir plus
+              Documentation
             </button>
           </div>
         </div>
@@ -123,10 +123,10 @@ onMounted(() => {
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
           <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Fonctionnalités Puissantes
+            Why MotionLab
           </h2>
           <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-            Tout ce dont vous avez besoin pour créer des expériences exceptionnelles
+            Everything you need to ship buttery smooth animations
           </p>
         </div>
 
@@ -159,14 +159,14 @@ onMounted(() => {
 
           <div class="relative z-10">
             <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Prêt à commencer ?
+              Start Building
             </h2>
             <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-              Rejoignez des milliers de créateurs qui utilisent déjà MotionLab pour donner vie à leurs idées
+              Check out the component library and see the code behind each animation
             </p>
             <button class="group px-10 py-5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-semibold text-lg shadow-2xl shadow-sky-500/40 hover:shadow-sky-500/60 hover:scale-105">
               <span class="flex items-center gap-2">
-                Démarrer gratuitement
+                Explore Components
                 <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                 </svg>

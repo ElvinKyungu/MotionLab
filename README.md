@@ -530,8 +530,8 @@ MotionLab demonstrates:
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/motionlab.git
-cd motionlab
+git clone https://github.com/ElvinKyungu/MotionLab.git
+cd MotionLab
 
 # Install dependencies
 npm install
