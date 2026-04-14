@@ -51,9 +51,9 @@ onMounted(() => {
   <div class="min-h-screen bg-gray-950 text-white overflow-hidden relative">
     <!-- Effets de fond floutés -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-0 -left-1/4 w-[800px] h-[800px] bg-gradient-radial from-sky-500/20 via-sky-500/5 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
-      <div class="absolute top-1/4 right-0 w-[600px] h-[600px] bg-gradient-radial from-cyan-500/15 via-cyan-500/5 to-transparent rounded-full blur-3xl animate-float"></div>
-      <div class="absolute bottom-0 left-1/3 w-[700px] h-[700px] bg-gradient-radial from-blue-500/10 via-blue-500/5 to-transparent rounded-full blur-3xl animate-float-delayed"></div>
+      <div class="absolute top-0 -left-1/4 w-200 h-200 bg-gradient-radial from-sky-500/20 via-sky-500/5 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute top-1/4 right-0 w-150 h-150 bg-gradient-radial from-cyan-500/15 via-cyan-500/5 to-transparent rounded-full blur-3xl animate-float"></div>
+      <div class="absolute bottom-0 left-1/3 w-175 h-175 bg-gradient-radial from-blue-500/10 via-blue-500/5 to-transparent rounded-full blur-3xl animate-float-delayed"></div>
     </div>
 
     <!-- Grille subtile en arrière-plan -->
@@ -62,14 +62,14 @@ onMounted(() => {
     <!-- Navigation -->
     <nav class="relative z-50 px-6 py-6 md:px-12 lg:px-24">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <div class="text-2xl font-bold bg-gradient-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
+        <div class="text-2xl font-bold bg-linear-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
           MotionLab
         </div>
         <div class="hidden md:flex items-center gap-8">
           <a href="#features" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">Features</a>
           <a href="/lab" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">Components</a>
           <a href="https://github.com/ElvinKyungu/MotionLab" class="text-gray-400 hover:text-sky-400 transition-colors duration-300">GitHub</a>
-          <button class="px-6 py-2 rounded-lg bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-medium shadow-lg shadow-sky-500/20">
+          <button class="px-6 py-2 rounded-lg bg-linear-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-medium shadow-lg shadow-sky-500/20">
             Browse Lab
           </button>
         </div>
@@ -79,30 +79,30 @@ onMounted(() => {
     <!-- Hero Section -->
     <section class="relative z-10 px-6 md:px-12 lg:px-24 pt-20 pb-32">
       <div class="max-w-7xl mx-auto">
-        <div class="max-w-4xl">
+        <div class="max-w-4xl mx-auto">
           <h1
             ref="heroTitle"
-            class="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
+            class="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-center"
           >
-            <span class="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
+            <span class="bg-linear-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent text-center">
               GSAP Animations
             </span>
             <br>
-            <span class="bg-gradient-to-r from-sky-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span class="bg-linear-to-r from-sky-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Made Simple
             </span>
           </h1>
 
           <p
             ref="heroSubtitle"
-            class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl font-light leading-relaxed"
+            class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto text-center font-light leading-relaxed"
           >
             Build production-ready animations with composable patterns.
             No boilerplate, just clean code and smooth 60fps motion.
           </p>
 
-          <div ref="heroButton" class="flex flex-wrap gap-4">
-            <button class="group px-8 py-4 rounded-lg bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-medium shadow-xl shadow-sky-500/30 hover:shadow-sky-500/50 hover:scale-105">
+          <div ref="heroButton" class="flex flex-wrap gap-4 justify-center">
+            <button class="group px-8 py-4 rounded-lg bg-linear-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-medium shadow-xl shadow-sky-500/30 hover:shadow-sky-500/50 hover:scale-105">
               <span class="flex items-center gap-2">
                 Browse Components
                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ onMounted(() => {
     <section id="features" class="relative z-10 px-6 md:px-12 lg:px-24 py-32">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-linear-to-r from-white to-gray-400 bg-clip-text text-transparent">
             Why MotionLab
           </h2>
           <p class="text-xl text-gray-400 max-w-2xl mx-auto">
@@ -135,7 +135,7 @@ onMounted(() => {
             v-for="(feature, index) in featureData"
             :key="index"
             :ref="(el) => setFeatureRef(el, index)"
-            class="group p-8 rounded-2xl bg-gradient-to-br from-gray-900/50 to-gray-900/20 border border-gray-800 hover:border-sky-500/50 backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/10"
+            class="group p-8 rounded-2xl bg-linear-to-br from-gray-900/50 to-gray-900/20 border border-gray-800 hover:border-sky-500/50 backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/10"
           >
             <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
               {{ feature.icon }}
@@ -154,17 +154,17 @@ onMounted(() => {
     <!-- CTA Section -->
     <section class="relative z-10 px-6 md:px-12 lg:px-24 py-32">
       <div class="max-w-4xl mx-auto text-center">
-        <div class="relative p-16 rounded-3xl bg-gradient-to-br from-sky-500/10 via-cyan-500/5 to-transparent border border-sky-500/20 backdrop-blur-sm overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-r from-sky-500/5 to-cyan-500/5 animate-gradient-shift"></div>
+        <div class="relative p-16 rounded-3xl bg-linear-to-br from-sky-500/10 via-cyan-500/5 to-transparent border border-sky-500/20 backdrop-blur-sm overflow-hidden">
+          <div class="absolute inset-0 bg-linear-to-r from-sky-500/5 to-cyan-500/5 animate-linear-shift"></div>
 
           <div class="relative z-10">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-linear-to-r from-white to-gray-300 bg-clip-text text-transparent">
               Start Building
             </h2>
             <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
               Check out the component library and see the code behind each animation
             </p>
-            <button class="group px-10 py-5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-semibold text-lg shadow-2xl shadow-sky-500/40 hover:shadow-sky-500/60 hover:scale-105">
+            <button class="group px-10 py-5 rounded-xl bg-linear-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 transition-all duration-300 font-semibold text-lg shadow-2xl shadow-sky-500/40 hover:shadow-sky-500/60 hover:scale-105">
               <span class="flex items-center gap-2">
                 Explore Components
                 <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
