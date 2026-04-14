@@ -4,6 +4,14 @@
   --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
 }
 
+html,
 body {
+  height: 100%;
   font-family: var(--font-sans);
+  background-color: rgb(3 7 18);
+  color: rgb(209 213 219);
+}
+
+#__nuxt {
+  height: 100%;
 }
